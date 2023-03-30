@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style media="all">
+                body{
+                    width:90%;
+                    margin:auto;
+                    padding-top: 20px;
+                } 
+
+                .maindiv {
+                border: 1px solid #f2f2f2;
+                 }
+
+                .header {
+                    display: flex;
+                    font-weight: bold;
+                    height: 50px;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                .row:nth-child(even){
+                    background-color: #f2f2f2;
+                }
+
+                .row {
+                    display: flex;   
+                    height: 50px;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                .col {
+                    flex: 1;
+                    align-items: center;
+                }
+            
+                @media only screen and (max-width: 500px), (min-devive-width: 500px) and  (max-devive-width: 1024px)
+                 {                 
+                    .row:nth-child(even){
+                        background-color: #eca1a6;
+                    }
+                }         
+            
+            
+
+        </style>
+        <body>
+            <div class="maindiv">
+                <div class="header">
+                    <div class="col">First Name</div>
+                    <div class="col">Last Name</div>
+                    <div class="col">Points</div>
+                </div>
+                <div class="row">
+                    <div class="col">Tanya</div>
+                    <div class="col">Spacey</div>
+                    <div class="col">90</div>
+                </div>
+                <div class="row">
+                    <div class="col">Marie</div>
+                    <div class="col">Tanner</div>
+                    <div class="col">75</div>
+                </div>
+                <div class="row">
+                    <div class="col">Francis</div>
+                    <div class="col">Smith</div>
+                    <div class="col">89</div>
+                </div>
+                <div class="row">
+                    <div class="col">Lucas</div>
+                    <div class="col">Wilson</div>
+                    <div class="col">90</div>
+                </div>
+            </div>
+        
+
+
+        </body>
+    </head>
+
+</html>
